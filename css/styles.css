@@ -14,7 +14,6 @@ body {
 /* CSS for main header section includes Navbar and Hero Section */
 .header {
     background-color: #1f2937;
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -55,7 +54,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex: 1;
-    margin: 2em 5em 5em 5em;
+    margin: 2em 10em 10em 10em;
 }
 
 .main-text {
@@ -69,11 +68,6 @@ ul {
     /* Makes both elements take equal space */
     padding: 20px;
     /* Optional: adds some padding */
-    height: 150px;
-}
-
-.image-holder {
-    height: 100%;
 }
 
 .description {
@@ -88,7 +82,11 @@ ul {
 }
 
 .image-holder {
-    background-color: #ccc;
+    background-color: #CCC;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* Adds a background color to visualize the placeholder */
 }
 
