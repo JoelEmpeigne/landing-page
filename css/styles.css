@@ -1,63 +1,122 @@
 body {
     margin: 0;
-    font: roboto;
+    padding: 0;
+    font-family: Roboto;
 }
 
-.container-flex {
+.flex-container {
     display: flex;
     flex-direction: column;
+    flex: 1;
     justify-content: center;
-    width: 100%;
-
 }
 
-.nav-bar {
+/* CSS for main header section includes Navbar and Hero Section */
+.header {
+    background-color: #1f2937;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    height: 50px;
+    flex-direction: column;
+}
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 28em;
+}
+
+.left-navbar a {
+    color: #f9faf8;
+    font: 24px;
+    text-decoration: none;
+}
+
+.right-navbar ul {
+    display: flex;
+    gap: 20px;
 }
 
 a {
     text-decoration: none;
+    font: 18px;
+    color: #f9faf8;
 }
 
-.left-nav {
-    flex-grow: 1;
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-.right-nav {
-    position: absolute;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-
-}
-
-.section1 {
-    height: 200px;
-    background-color: #1F2937;
+/* starting hero-section css here */
+.hero-section {
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    flex: 1;
+    margin: 2em 5em 5em 5em;
 }
 
-.section2 {
-    height: 200px;
+.main-text {
+    display: flex;
+    flex-direction: column;
 }
 
-.section3 {
+.hero-text,
+.image-holder {
+    flex: 1;
+    /* Makes both elements take equal space */
+    padding: 20px;
+    /* Optional: adds some padding */
+    height: 150px;
+}
+
+.image-holder {
+    height: 100%;
+}
+
+.description {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.image-holder {
+    background-color: #ccc;
+    /* Adds a background color to visualize the placeholder */
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.section-1 {
+    height: 250px;
+}
+
+.section-2 {
     height: 200px;
     background-color: #E5E7EB;
 }
 
-.section4 {
-    height: 200px;
-
+.section-3 {
+    height: 150px;
 }
 
 .footer {
-    height: 75px;
-    background-color: #1F2937;
+    background-color: #1f2937;
+    height: 50px;
 }
